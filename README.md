@@ -8,8 +8,6 @@ It is deletion-focused. It does not hunt for bugs, and it only reshapes structur
 
 ## Install
 
-With the [`skills`](https://github.com/vercel-labs/skills) CLI:
-
 ```bash
 bunx skills add sasoder/disinfect
 ```
@@ -18,22 +16,6 @@ or
 
 ```bash
 npx skills add sasoder/disinfect
-```
-
-Useful flags:
-
-```bash
-# install for the current user instead of the current project
-bunx skills add sasoder/disinfect -g
-
-# target a specific agent and skip prompts
-bunx skills add sasoder/disinfect -a claude-code -y
-```
-
-Manual install for Claude Code (safe to rerun; replaces any existing copy):
-
-```bash
-mkdir -p ~/.claude/skills && rm -rf ~/.claude/skills/disinfect && tmp=$(mktemp -d) && git clone --depth 1 https://github.com/sasoder/disinfect.git "$tmp" && cp -r "$tmp/skills/disinfect" ~/.claude/skills/disinfect && rm -rf "$tmp"
 ```
 
 ## Use
