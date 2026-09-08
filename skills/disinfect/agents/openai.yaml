@@ -1,0 +1,4 @@
+interface:
+  display_name: "Disinfect"
+  short_description: "Remove residue from settled implementations"
+  default_prompt: "Use $disinfect to simplify the final diff with the benefit of hindsight."
